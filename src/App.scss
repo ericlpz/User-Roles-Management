@@ -1,0 +1,94 @@
+@import './bootstrap.scss';
+
+$global-margin: 25px;
+
+html, body {
+  font-family: 'Trebuchet MS', Arial, san-serif;
+  background-color: #f9f9f9;
+  color: #797979;
+} 
+
+.container {
+  background-color: #fff;
+  margin-top: $global-margin;
+  padding: $global-margin * 2;
+}
+
+header {
+  margin-bottom: $global-margin * 3;
+  h1 {
+    font-size: 32px;
+    margin-bottom: $global-margin * 3;
+  }
+  .btn {
+    background-color: #5fb6c5;
+    border-color: #5fb6c5;
+    font-size: 15px;
+    @media (min-width: 768px){
+      float: right;
+    }
+    @media (max-width: 768px){
+      font-size: 14px;
+      margin-top: $global-margin;
+      width: 100%;
+    }
+  }
+  .form-control {
+    &.custom {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #5fb6c5;
+      -webkit-transition: all 0.5s; /* Safari */
+      transition: all 0.5s;    
+      &:focus {
+        // border: 0;
+        border-radius: 16px 16px 0px 0px;
+        background-color: rgb(243, 243, 243);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.photoholder {
+  padding-right: 0;
+}
+
+.role_card {
+  padding: $global-margin;
+  padding-bottom: $global-margin + 35;
+  border: 1px solid #e5e5e5;
+  margin-bottom: $global-margin;
+  position: relative;
+  .postdate {
+    left: 15px;
+    bottom: 0;
+    background-color: #f8f8f8;
+    position: absolute;
+    width: 100%;
+    padding-left: $global-margin;
+    padding-right: $global-margin;
+    padding-top: $global-margin / 2;
+    .col {
+      padding-left: 0;
+    }
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h2, h3, p{
+    color: #797979;
+  }
+  p {
+    font-size: 14px;
+  }
+  img {
+    width: 32px;
+    border-radius: 24px;
+  }
+}
