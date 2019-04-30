@@ -26,10 +26,9 @@ class FilterForm extends Component  {
                     </Col>
                     <Col xs={6} md={4} lg={4}>
                     <Form.Control onChange={this.filterHandler} ref={this.filterInput} as="select" className="custom">
-                        <option value="">Search status...</option>
+                        <option value="">Active and Inactive</option>
                         <option value="yes">Active</option>
                         <option value="no">Inactive</option>
-                        <option value="">Active and Inactive</option>
                     </Form.Control>
                     </Col>
                     <Col xs={12} md={4} lg={{ span: 3, offset: 1 }}>
