@@ -56,6 +56,10 @@ header {
   padding-right: 0;
 }
 
+.roleform {
+  margin-top: $global-margin * 1.25;
+}
+
 .role_card {
   padding: $global-margin;
   padding-bottom: $global-margin + 35;
@@ -71,6 +75,16 @@ header {
     padding-left: $global-margin;
     padding-right: $global-margin;
     padding-top: $global-margin / 2;
+    p {
+      font-size: 12px;
+      float: left; 
+    }
+    img {
+      &.lock {
+        width: 18px;
+        float: right;
+      }
+    }
     .col {
       padding-left: 0;
     }
